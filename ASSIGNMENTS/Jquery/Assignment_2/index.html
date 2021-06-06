@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<h1>Image viewer</h1>
+	<div class="container">
+		<ul>
+			<li><a href="big-1.jpg"><img src="thumb-1.jpg"></a></li>
+			<li><a href="big-2.jpg"><img src="thumb-2.jpg"></a></li>
+			<li><a href="big-3.jpg"><img src="thumb-3.jpg"></a></li>
+			<li><a href="big-4.jpg"><img src="thumb-4.jpg"></a></li>
+		</ul>
+		<div class="imgBox"><img src="big-1.jpg" alt=""></div>
+	</div>
+	<script>
+		let link = document.querySelectorAll('li a');
+		let imgBox = document.querySelector('.imgBox>img');
+
+		link.forEach(el => {
+			el.addEventListener('mouseover', (e) => imgBox.src = el.href);
+		});
+	</script>
+</body>
+</html>
