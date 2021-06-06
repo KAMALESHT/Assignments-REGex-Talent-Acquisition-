@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <p id="change_1"></p>
+    <button onclick="myFunction()">click here to change</button>
+    <p id="change_2"></p>
+<script>
+    var temp_1 = document.getElementById("change_1");
+    var temp_2 = document.getElementById("change_2");
+    var str= ("value has a value only if it is valued");
+    var res ={
+        value :"price",
+        valued : "priced"
+    };
+    temp_1.innerHTML =str;
+    function myFunction(){
+        temp_2.innerHTML = str.replace(/value|valued/gi,function(matched){
+            return res[matched];
+        });
+    }
+    
+</script>
+
+</body>
+</html>

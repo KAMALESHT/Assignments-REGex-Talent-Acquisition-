@@ -1,0 +1,56 @@
+.a {
+  zoom: 1;
+}
+.a:before,
+.a:after {
+  content: "";
+  display: table;
+}
+.num {
+  background-color: #eeb500;
+  color: #fff;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.top {
+  padding: 5px;
+  border: 1px #eee solid;
+  background: #fff;
+  margin: 10px 10px 30px 0px;
+  font-size: 14px;
+  color: #333;
+  float: left;
+}
+.magtitle {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-top: 5px;
+  height: 50px;
+  font-size: 18px;
+}
+a,
+a:visited,
+a:active,
+a:hover {
+  color: #307da8;
+  text-decoration: none;
+}
+.scroll {
+  height: 110px;
+  width: 98%;
+  overflow: auto;
+  color: #4c4c4c;
+}
+.subscribe_large a {
+  display: block;
+  background-color: #e00000;
+  color: #fff;
+  text-transform: none;
+  padding: 2px;
+  width: 94%;
+  margin: 5px 0px 5px 5px;
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .scroll{
+    height: 120px;
+    width :150px;
+    overflow-y: scroll;
+    border: 1px solid;
+
+  
+}
+</style>
+
+<body>
+    <form action="" style="display: flex;align-items: center; flex-direction: column;">
+        <div><fieldset style="width: 500px;border-radius: 5px;"> 
+        <legend><h2>Contact Details</h2></legend>
+        <label for="">Name:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" width="150px"><br><br>
+        <label for="">Telephone:</label>
+        <input type="number"><br><br>
+        <label for="" >Email:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" width="150px"></fieldset></div>
+        
+        <div><fieldset style="width: 500px;border-radius: 5px;"> 
+            <legend><h2>Personal Information</h2></legend>
+            <label for="">Age:</label>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" width="150px"><br><br>
+            <label for="">Gender:</label>
+            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="text" id="">
+                <option value="">Select</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Transgender</option>
+            </select><br><br>
+            <div style="display: flex; flex-direction: row;"> <label for="" >When did you <br>
+                first know <br>
+                 wanted to be a <br>
+                 zoo keeper? 
+                </label>
+                &nbsp;&nbsp;&nbsp;&nbsp;<div class="scroll"><input type="text" width="150px"></fieldset></div></div></div>
+           
+            <fieldset style="width: 500px;border-radius: 5px;">
+                <legend><h2>Pick Your Favourite Animals</h2></legend>
+                <input type="checkbox">
+                <label for="">Zebra</label>
+               &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type="checkbox">
+                <label for="">Cat</label><br>
+                <input type="checkbox">
+               <label for="">Elephant</label>
+                &nbsp;&nbsp;  <input type="checkbox">
+                <label for="">Pigeon</label>
+            </fieldset><br>
+            <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
